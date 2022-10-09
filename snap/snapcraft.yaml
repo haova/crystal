@@ -1,6 +1,6 @@
-name: crystal
+name: crystally
 version: 1.0.0
-summary: Crystal
+summary: Crystally
 description: Blink Blink Application
 
 confinement: strict
@@ -8,21 +8,21 @@ base: core18
 grade: stable
 
 slots:
-  dbus-crystal:
+  dbus-crystally:
     interface: dbus
     bus: session
-    name: vn.haova.crystal
+    name: vn.haova.crystally
     
 apps:
-  crystal:
-    command: crystal
+  crystally:
+    command: crystally
     extensions: [flutter-master]
     plugs:
     - network
     slots:
-      - dbus-crystal
+      - dbus-crystally
 parts:
-  crystal:
+  crystally:
     source: .
     plugin: flutter
     flutter-target: lib/main.dart

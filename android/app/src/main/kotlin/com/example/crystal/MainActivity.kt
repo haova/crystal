@@ -1,4 +1,4 @@
-package me.haova.crystal
+package me.haova.crystally
 
 import io.flutter.embedding.android.FlutterActivity
 

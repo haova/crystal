@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="me.haova.crystal">
+    package="me.haova.crystally">
    <application
-        android:label="crystal"
+        android:label="crystally"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity

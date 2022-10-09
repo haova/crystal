@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Crystal
+Name=Crystally
 Comment=Blink Blink Application
-Exec=crystal
-Icon=${SNAP}/meta/gui/crystal.png
+Exec=crystally
+Icon=${SNAP}/meta/gui/crystally.png
 Terminal=false
 Type=Application
 Categories=Personalisation;

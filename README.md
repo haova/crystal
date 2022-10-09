@@ -1,4 +1,4 @@
-# Crystal
+# Crystally
 
 A blink blink project.
 
