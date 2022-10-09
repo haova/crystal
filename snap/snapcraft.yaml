@@ -1,0 +1,28 @@
+name: crystal
+version: 1.0.0
+summary: Crystal
+description: Blink Blink Application
+
+confinement: strict
+base: core18
+grade: stable
+
+slots:
+  dbus-crystal:
+    interface: dbus
+    bus: session
+    name: vn.haova.crystal
+    
+apps:
+  crystal:
+    command: crystal
+    extensions: [flutter-master]
+    plugs:
+    - network
+    slots:
+      - dbus-crystal
+parts:
+  crystal:
+    source: .
+    plugin: flutter
+    flutter-target: lib/main.dart
