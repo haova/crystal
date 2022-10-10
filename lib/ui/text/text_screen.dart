@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marquee/marquee.dart';
+import '../../widgets/marquee.dart';
 
 class TextScreen extends StatefulWidget {
   final Map<String, dynamic> settings;
@@ -16,12 +16,14 @@ class _TextScreenState extends State<TextScreen> {
     return Center(
       child: Marquee(
         text: '${widget.settings['text'] ?? ''} ',
-        style: const TextStyle(
+        style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 120,
+          color: widget.settings['color'] ?? Colors.white,
         ),
         velocity: 120.0,
         blankSpace: 240.0,
+        glow: widget.settings['glow'] ?? 0,
       ),
     );
   }
